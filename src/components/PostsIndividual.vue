@@ -58,15 +58,15 @@ export default {
     color: #11141E;
     font-size: 1.8em;
     font-weight: 700;
-    color: #6854ea;
-    line-height: 1.3em;
+    color: #444;
+    line-height: 1.4em;
 }
 .div-posts div h2:hover {
     opacity: 0.8;
 }
 .div-posts div p {
     color: #444;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1em;
     line-height: 1.4em;
 }

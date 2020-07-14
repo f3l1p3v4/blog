@@ -30,7 +30,7 @@ export default {
   box-sizing: border-box;
 }
 body {
-  background: #dbdbee !important;
-  font-family: 'Roboto', serif;
+  font-family: Montserrat, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Roboto, Helvetica, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #6854ea39;
 }
 </style>
