@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import Posts from './components/Posts';
+import Posts from './components/Post';
 import StartingVue from './components/posts/StartingVue';
 
 Vue.use(VueRouter)
@@ -14,11 +14,6 @@ export default new VueRouter({
     }, {
         path: '/posts/:idnotice',
         name: 'posts',
-        component: StartingVue,
-        beforeEnter: (to, from, next) => {
-            console.log('ok')
-            next();
-
-        }
+        component: StartingVue
     }]
 })

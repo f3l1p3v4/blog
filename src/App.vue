@@ -8,7 +8,7 @@
 
 <script>
 import Header from "./components/Header";
-import Posts from "./components/Posts";
+import Posts from "./components/Post";
 import Footer from "./components/Footer";
 
 export default {
