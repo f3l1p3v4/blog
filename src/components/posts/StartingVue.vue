@@ -1,22 +1,26 @@
 <template>
     <section>
-        <div class="container">
-            <div class=" div-news">
-                <div>
-                    <h2 class="">{{ post.title }}</h2>
-                    <div class="author">
-                        <span class="font-italic">por <strong>Felipe Valdez</strong></span>
-                    </div>
-                    <h3>Introdução</h3>
-                    <p class="content">{{ post.content }}</p>
-                    <pre class=" language-bash">
-                        <code class=" language-bash">npx react-native init authrn --template react-native-template-typescript
-                        </code>
-                    </pre>
-                    <span>{{ formatDate(post.date) }}</span>
+        <div>
+            <h2 class="">{{ post.title }}</h2>
+            <div>
+                <div class="col-6 author">
+                    <img src="../../assets/avatar.png" alt="avatar">
+                    <strong class="font-italic">Felipe Valdez</strong>
                 </div>
-           
+                <div class="col-6">
+                    
+                </div>
             </div>
+            <img :src="require(`../../assets/${post.img}`)" :alt="post.imgInfo">
+            <div class="content">
+                <p>E ai pessoal como vocês estão?</p>
+                <p>{{ post.content }}</p>
+            </div>
+            <pre class=" language-bash">
+                <code class=" language-bash">npx react-native init authrn --template react-native-template-typescript
+                </code>
+            </pre>
+            <span>{{ formatDate(post.date) }}</span>
         </div>
     </section>
 </template>
@@ -47,11 +51,11 @@ export default {
 <style scoped>
 section {
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     padding: 50px;
     margin: 10px auto;
     background: #FFF;
-    display: flex;
+    display: block;
     align-items: center;
     background-color: #fff;
     border-radius: 6px;
@@ -66,9 +70,9 @@ h2 {
     line-height: 1.4em;
 }
 
-h3 {
-    font-size: 2.4em;
-    font-weight: 700;
+section div img {
+    width: 100%;
+    border-radius: 6px;
 }
 
 .content {
@@ -76,55 +80,18 @@ h3 {
     font-weight: 600;
 }
 
-pre {
-    background: rgba(40, 41, 54, 1) !important;
-    border-radius: 0.5em;
-    padding: 0.8em;
-    margin: 0.5em 0;
-    overflow: auto;
-    height: auto;
-    --lightense-z-index: 999999;
-    --lightense-backdrop: rgba(255, 255, 255, .98);
-    --lightense-backdrop-safari: rgba(255, 255, 255, 0.6859999999999999);
-    --lightense-duration: 300ms;
-    --lightense-timing-func: cubic-bezier(.2, 0, .1, 1);
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-font-smoothing: antialiased;
-    font-weight: var(--font-weight-primary-regular);
-    background: rgba(40, 41, 54, 1) !important;
-    border-radius: 0.5em;
-    padding: 1em;
-    margin: 0.5em 0;
-    overflow: auto;
-    height: auto;
-    color: #ccc;
-    text-shadow: none;
-    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    line-height: 1.8;
-    font-size: 16px;
-    tab-size: 4;
-    hyphens: none;
+section div pre {
 }
 
-pre code {
-    display: block;
-    padding: 20px 5px;
-    color: #ccc;
-    background: rgb(40, 41, 54);
-    text-shadow: none;
-    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
+section div pre> code {
 }
 
 .author {
     color: #999;
     padding: 10px 0;
+}
+
+.author img{
+    width: 8%;
 }
 </style>
