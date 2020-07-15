@@ -1,23 +1,28 @@
 <template>
   <div>
     <Header />
-    <Posts />
+    <Section :current-component="currentSectionComponent" />
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from "./components/Header";
-import Posts from "./components/Posts";
-import Footer from "./components/Footer";
+import Header from "./components/BlogHeader";
+import Section from "./components/BlogSection";
+import Footer from "./components/BlogFooter";
 
 export default {
   name: "App",
   components: {
     Header,
-    Posts,
+    Section,
     Footer
-  }
+  },
+  data() {
+    return {
+      currentSectionComponent: 'BlogSectionPost'
+    }
+  },
 };
 </script>
 
@@ -30,7 +35,7 @@ export default {
   box-sizing: border-box;
 }
 body {
-  background: #dbdbee !important;
-  font-family: 'Roboto', serif;
+  font-family: Montserrat, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Roboto, Helvetica, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #6854ea39;
 }
 </style>

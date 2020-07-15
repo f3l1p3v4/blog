@@ -13,7 +13,7 @@
                     <router-link :to="{ name: 'posts', params: {idnotice: post.id} }" tag="h2" >{{ post.title }}</router-link>
                 </template>
 
-                <p>{{ post.content | truncate(200) }}</p>
+                <p>{{ post.content | truncate(150) }}</p>
             </PostsIndividual>
 
 
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import PostsIndividual from './PostsIndividual';
+import PostsIndividual from './BlogSectionPostIndividual';
 import { mapGetters } from 'vuex'
 
 export default {
@@ -47,7 +47,7 @@ export default {
 <style>
 .section-posts {
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     padding: 50px 0;
     margin: 10px auto;
 }

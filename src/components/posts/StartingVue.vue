@@ -42,6 +42,10 @@ export default {
 </script>
 
 <style scoped>
+img {
+    width: 200px;
+}
+
 h2 {
     cursor: auto;
     color: #000;

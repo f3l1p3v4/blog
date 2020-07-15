@@ -49,7 +49,6 @@ export default {};
 }
 
 .navbar .logo h1 {
-  font-family: Open Sans, sans-serif;
   color: #6854ea;
   font-size: 1.6rem;
   font-weight: 700;

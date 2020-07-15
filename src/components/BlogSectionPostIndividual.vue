@@ -1,11 +1,11 @@
 <template>
     <div class="row div-posts">
 
-        <div class="col-3">
+        <div class="col-12 col-md-4">
             <img :src="require('../assets/' + this.imgName)" :alt="imgInfo">
         </div>
 
-        <div class="col-9">
+        <div class="col-12 col-md-8">
             
             <slot name="title"></slot>
 
@@ -42,34 +42,52 @@ export default {
 <style>
 .div-posts {
     padding: 50px 0;
-    margin-bottom: 30px;
+    margin: 15px;
     display: flex;
     align-items: center;
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 1px 10px -2px gray;
 }
+
+@media (max-width:760px) {
+    .div-posts {
+        padding: 15px 0;
+    }
+}
+
 .div-posts div img {
     width: 100%;
     border-radius: 6px;
 }
+
 .div-posts div h2 {
     cursor: pointer;
     color: #11141E;
     font-size: 1.8em;
     font-weight: 700;
-    color: #6854ea;
-    line-height: 1.3em;
+    color: #444;
+    line-height: 1.4em;
 }
+
 .div-posts div h2:hover {
     opacity: 0.8;
 }
+
+@media (max-width:400px) {
+    .div-posts div h2 {
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+}
+
 .div-posts div p {
     color: #444;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1em;
     line-height: 1.4em;
 }
+
 .div-posts div span {
     color: #999;
 }
