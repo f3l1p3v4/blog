@@ -8,10 +8,10 @@
                     <strong class="font-italic">Felipe Valdez</strong>
                 </div>
                 <div class="col-6">
-                    
+
                 </div>
             </div>
-            <img :src="require(`../../assets/${post.img}`)" :alt="post.imgInfo">
+            <img class="image-post" :src="require(`../../assets/${post.img}`)" :alt="post.imgInfo">
             <div class="content">
                 <p>E ai pessoal como vocês estão?</p>
                 <p>{{ post.content }}</p>
@@ -70,9 +70,10 @@ h2 {
     line-height: 1.4em;
 }
 
-section div img {
+.image-post {
     width: 100%;
     border-radius: 6px;
+    margin-bottom: 20px;
 }
 
 .content {
