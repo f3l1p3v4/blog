@@ -9,6 +9,9 @@
       <div class="navbar-menu">
         <ul>
           <li>
+            <router-link to="/">Home</router-link>
+          </li>
+          <li>
             <a href="https://felipevaldez.netlify.app/">Portfólio</a>
           </li>
         </ul>
@@ -104,21 +107,8 @@ export default {};
   font-size: 1.1em;
 }
 
-.navbar-menu ul li a:before {
-  content: "";
-  position: absolute;
-  top: 0.8rem;
-  display: block;
-  width: 0%;
-  border-top: 3px solid #6854ea;
-  transition: 0.5s;
-}
-
-.navbar-menu ul li a:hover:before {
-  width: 5%;
-}
 .navbar-menu ul li a:hover {
-  color: #6854ea;
+  opacity: 0.8;
 }
 
 .navbar-menu ul li a:active {

@@ -63,10 +63,9 @@ export default {
 
 .div-posts div h2 {
     cursor: pointer;
-    color: #11141E;
+    color: #6854ea;
     font-size: 1.8em;
     font-weight: 700;
-    color: #444;
     line-height: 1.4em;
 }
 

@@ -48,7 +48,7 @@ export default {
 .section-posts {
     width: 100%;
     max-width: 1000px;
-    padding: 50px 0;
+    padding: 10px 0;
     margin: 10px auto;
 }
 </style>
