@@ -8,7 +8,7 @@
                     <strong class="font-italic">Felipe Valdez</strong>
                 </div>
                 <div class="col-6">
-
+                                        
                 </div>
             </div>
             <img class="image-post" :src="require(`../../assets/${post.img}`)" :alt="post.imgInfo">
