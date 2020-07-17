@@ -16,34 +16,34 @@
                 <p>E ai pessoal como vocês estão?</p>
                 <p>{{ post.content }}</p>
             </div>
-            <pre class=" language-bash">
+            <!-- <pre class=" language-bash">
                 <code class=" language-bash">npx react-native init authrn --template react-native-template-typescript
                 </code>
-            </pre>
+            </pre> -->
             <p>Eu vou utilizar o simulador do iOS aqui, você pode utilizar o do Android ou até mesmo criar um projeto com Expo, isso não vai impedir de você seguir o tutorial.</p>
             <p>Então depois de criar o projeto, posso executar:</p>
-            <pre class=" language-bash">
+            <!-- <pre class=" language-bash">
                 <code class=" language-bash">cd authrn && yarn ios</code>
-            </pre>
+            </pre> -->
 
             <div id="highlighter_521370" class="syntaxhighlighter  bash">
                 <table border="0" cellpadding="0" cellspacing="0">
                     <tbody>
                         <tr>
-                            <td class="gutter">
+                            <!-- <td class="gutter">
                                 <div class="line number1 index0 alt2">1</div>
                                 <div class="line number2 index1 alt1">2</div>
-                            </td>
+                            </td> -->
                             <td class="code">
                                 <div class="container">
                                     <div class="line number1 index0 alt2">
-                                        <code class="bash comments"># última versão estável</code>
+                                        <code class="bash comments">npx react-native init authrn --template react-native-template-typescript</code>
                                     </div>
-                                    <div class="line number2 index1 alt1">
+                                    <!-- <div class="line number2 index1 alt1">
                                         <code class="bash plain">$ npm </code>
                                         <code class="bash functions">install</code> 
                                         <code class="bash plain">vue</code>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </td>
                         </tr>
@@ -111,7 +111,7 @@ p {
     /* font-weight: 500; */
 }
 
-section div pre {
+/* section div pre {
     display: block;
     font-family: monospace;
     white-space: pre;
@@ -122,7 +122,7 @@ section div pre {
     padding: 1em;
     margin: 0.5em 0;
     overflow: auto;
-    /* height: auto; */
+    height: auto;
 }
 
 section div pre> code {
@@ -135,7 +135,7 @@ section div pre> code {
     border-radius: var(--border-radius-secondary);
     background-color: var(--color-bg-code);
     color: #e1e1e6;
-}
+} */
 
 div {
     /* display: block; */
@@ -152,7 +152,7 @@ div {
 
 .syntaxhighlighter {
     line-height: 35px;
-    color: #253A44;
+    color: rgba(40, 41, 54, 1) !important;
     font-size: 18px;
     -webkit-tap-highlight-color: transparent;
     padding: 20px;
@@ -171,12 +171,12 @@ table {
     border-collapse: initial;
     border: none;
     margin: 0;
-    color: inherit;
+    color: #fff;
     line-height: 1;
     font-size: inherit;
     outline: none;
 }
-
+/* 
 table tbody {
     border-collapse: initial;
     color: inherit;
@@ -184,18 +184,18 @@ table tbody {
     font-size: inherit;
     -webkit-tap-highlight-color: transparent;
     outline: none;
-}
+} */
 
-table tbody tr {
+/* table tbody tr {
     border-collapse: initial;
     color: inherit;
     line-height: 1;
     font-size: inherit;
     -webkit-tap-highlight-color: transparent;
     outline: none;
-}
+} */
 
-.gutter {
+/* .gutter {
     border-collapse: initial;
     line-height: 1;
     font-size: inherit;
@@ -204,5 +204,9 @@ table tbody tr {
     border: none;
     padding: 0;
     outline: none;
+} */
+
+.comments {
+    color: #FFF;
 }
 </style>
